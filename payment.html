@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Details</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans bg-black">
+
+  <!-- Navbar -->
+  <nav class="bg-black p-4">
+    <div class="container mx-auto text-white text-center">
+      <h1 class="text-2xl font-bold animate-bounce sh">Payment Portal</h1>
+    </div>
+  </nav>
+
+  <!-- Payment Details Section -->
+  <section class="py-10">
+    <div class="container mx-auto px-6 sm:px-12 lg:px-24">
+      <div class="flex flex-col md:flex-row gap-20">
+
+        <!-- Left Column - Payment Form -->
+        <div class="flex-1 bg-black p-6 rounded-lg sha2">
+          <h2 class="text-2xl font-semibold mb-4">Enter Payment Information</h2>
+          
+          <form action="#" method="POST">
+            <div class="mb-4">
+              <label for="name" class="block text-white">Full Name</label>
+              <input type="text" id="name" class="w-full p-3 border border-gray-300 rounded-md" placeholder="Enter your name" required>
+            </div>
+
+            <div class="mb-4">
+              <label for="email" class="block text-white">Email</label>
+              <input type="email" id="email" class="w-full p-3 border border-gray-300 rounded-md" placeholder="Enter your email" required>
+            </div>
+
+            <div class="mb-4">
+              <label for="cardNumber" class="block text-white">Card Number</label>
+              <input type="text" id="cardNumber" class="w-full p-3 border border-gray-300 rounded-md" placeholder="Enter card number" required>
+            </div>
+
+            <div class="mb-4 flex gap-4">
+              <div class="w-1/2">
+                <label for="expiryDate" class="block text-white">Expiry Date</label>
+                <input type="month" id="expiryDate" class="w-full p-3 border border-gray-300 rounded-md" required>
+              </div>
+
+              <div class="w-1/2">
+                <label for="cvv" class="block text-white">CVV</label>
+                <input type="text" id="cvv" class="w-full p-3 border border-gray-300 rounded-md" placeholder="Enter CVV" required>
+              </div>
+            </div>
+
+            <div class="flex justify-center items-center">
+            <button type="submit" class="w-30 bg-black text-white p-3 rounded-md mt-4 sha4 font-bold">Submit Payment</button>
+        </div>
+          </form>
+        </div>
+
+        <!-- Right Column - Payment Summary -->
+        <div class="flex-1 bg-black p-6 rounded-lg sha2 text-white">
+          <h2 class="text-2xl font-semibold mb-4">Payment Summary</h2>
+          
+          <div class="flex justify-between mb-2">
+            <span class="text-white">Item Total</span>
+            <span class="font-bold text-white">$199.99</span>
+          </div>
+          <div class="flex justify-between mb-2">
+            <span class="text-white">Shipping</span>
+            <span class="font-bold text-white">$10.00</span>
+          </div>
+          <div class="flex justify-between mb-2">
+            <span class="text-white">Tax</span>
+            <span class="font-bold text-white">$15.00</span>
+          </div>
+
+          <hr class="my-4">
+
+          <div class="flex justify-between mb-4">
+            <span class="text-lg font-semibold text-white">Total Amount</span>
+            <span class="text-lg font-bold text-white">$224.99</span>
+          </div>
+
+          <div class="bg-black p-4 rounded-md mt-4">
+            <h3 class="font-semibold text-white">Shipping Address</h3>
+
+            <!-- Detailed Address Form -->
+            <div class="mb-4">
+              <label for="addressLine1" class="block text-white">Address Line 1</label>
+              <input type="text" id="addressLine1" class="w-full p-3 border border-gray-300 rounded-md" placeholder="Street Address" required>
+            </div>
+
+            <div class="mb-4">
+              <label for="addressLine2" class="block text-white">Address Line 2 (optional)</label>
+              <input type="text" id="addressLine2" class="w-full p-3 border border-gray-300 rounded-md" placeholder="Apartment, Suite, Floor" />
+            </div>
+
+            <div class="mb-4">
+              <label for="city" class="block text-white">City</label>
+              <input type="text" id="city" class="w-full p-3 border border-gray-300 rounded-md" placeholder="City">
+            </div>
+
+            <div class="mb-4">
+              <label for="province" class="block text-white">Province</label>
+              <input type="text" id="province" class="w-full p-3 border border-gray-300 rounded-md" placeholder="Enter your province" required />
+            </div>
+
+            <div class="mb-4">
+              <label for="postalCode" class="block text-white">Postal Code</label>
+              <input type="text" id="postalCode" class="w-full p-3 border border-gray-300 rounded-md" placeholder="Enter postal code" required />
+            </div>
+
+            <div class="mb-4">
+              <label for="country" class="block text-white">Country</label>
+              <input type="text" id="country" class="w-full p-3 border border-gray-300 rounded-md placeholder-black" placeholder="Pakistan" readonly />
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+</body>
+</html>
